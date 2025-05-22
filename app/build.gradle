@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' version '1.8.10' apply false
+}
+
+android {
+    namespace 'com.example.privacybrowser'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.privacybrowser"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
+}
